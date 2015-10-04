@@ -1,0 +1,27 @@
+{
+    "name": "justjst",
+    "version": "0.0.1",
+    "description": "The easiest template engine to compile javascript templates.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "template",
+        "engine",
+        "compile",
+        "render",
+        "jst",
+        "javascript"
+    ],
+    "author": {
+        "name": "Stepan Zhevak",
+        "email": "enet@protonmail.ch",
+        "url": "zhevak.name"
+    },
+    "repository": "https://github.com/Enet/justjst",
+    "license": "GPLv3",
+    "engines": {
+        "node": ">=4.0.0"
+    }
+}
