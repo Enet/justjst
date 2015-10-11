@@ -1,13 +1,16 @@
 'use strict';
 
 let char = [0, 1, 2, 3].map(c => String.fromCharCode(c)),
-    re = Object.assign([0, 1, 2].map(c => new RegExp(char[c], 'gm')), {
+    re = Object.assign([0, 1, 2, 3].map(c => new RegExp(char[c], 'gm')), {
         n: /\n/gm,
         slash: /\\/gm,
         quote: /'/gm
     });
 
 module.exports = function (template) {
+    for (let c = 0, cl = char.length; c < cl; c++) {
+        template = template.replace(re[c], '');
+    }
     let jsInserts = [],
         templateCode = (template + '')
             .replace(re.n, char[0])
