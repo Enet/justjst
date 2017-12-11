@@ -1,4 +1,8 @@
 # justjst
+
+**DON'T USE THE PACKAGE. IT'S DEPRECATED!!!
+USE TEMPLATE STRINGS INSTEAD.**
+
 The easiest template engine to compile javascript templates. The module returns template-function, which could be executed any moment and returns the final string.
 
 Are there some options? No. All you can use is constructions like `<? echo('9 + 16 = 25') ?>` and `<?= 2 * 2 === 4 ?>`.
